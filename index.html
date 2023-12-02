@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <title>Weather</title>
+</head>
+<body>
+    <!-- start header  -->
+   <div class="site-content">
+    <div class="site-header">
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container">
+              <a class="navbar-brand" href="#"></a>
+                <img src="images/logo.png" alt="" class="logo">
+                <div class="logo-type">
+                    <h1 class="site-title">Weather</h1>
+                    <small class="site-desc">tagline goes here</small>
+                </div>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                  <li class="nav-item p-3">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item p-3">
+                    <a class="nav-link" href="#">News</a>
+                  </li>
+                  <li class="nav-item p-3">
+                    <a class="nav-link" href="#">Live Cameras</a>
+                  </li>
+                  <li class="nav-item p-3">
+                    <a class="nav-link" href="#">Photos</a>
+                  </li>
+                  <li class="nav-item p-3">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                
+                  
+                </ul>
+                
+              </div>
+            </div>
+          </nav>
+    </div>
+   </div>
+     <!-- end header  -->
+
+     <!-- statr home  -->   
+    <div class="home">
+        <div class="container">
+            <form class="find-location ">
+                <input type="text" placeholder="Find Your Location..." id="search">
+                <input type="button" value="Find" id="submit">
+            </form>
+        </div>
+    </div>
+
+    
+    <div class="forecast-table">
+        <div class="container">
+            <div class="forecast-container" id="forecast">
+                <div class="today forecast">
+                    <div class="forecast-header text-white" id="today">
+                        <div class="day d-block" id="todayName" ></div>
+                        <div class="date d-block" id="todayNum"></div>
+                    </div>
+                    <div class="forecast-content"id="current">
+                      <div class="location" id="todayLocation"></div>
+                      <div class="degree">
+                          <div class="num" id="temp"><sup>0</sup>c
+                              
+                          </div>
+                          <div class="forecast-icon">
+                              <img id="todayImg" src="" alt="" width="90">
+                          </div>
+                      </div>
+                      <div class="custom" id="todayText"></div>
+                      <div class="imgs d-flex justify-content-between align-items-center">                      <span>
+                        
+                        <img src="images/icon-umberella.png" alt="">
+                        <p id="humidity"></p>
+                      </span>
+                      <span>
+                        <img src="images/icon-wind.png" alt="">
+                        <p id="wind"></p>
+                      </span>
+                      <span>
+                        <img src="images/icon-compass.png" alt="">
+                       <p id="windDirection"></p> 
+                      </span>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="forecast">
+                  <div class="forecast-header">
+                    <div class="day next_day_name" ></div>
+                  </div>
+                  <div class="forecast-content">
+                    <div class="forecast-icon">
+                      <img class="next_condition_img" src="" alt width="48" >
+                    </div>
+                    <div class="degree2 next_max_temp"><sup></sup></div>
+                    <small class="next_min_temp"> <sup></sup></small>
+                    <div class="custom next_condition_text"></div>
+                  </div>
+                </div>
+                
+
+                <div class="forecast">
+                  <div class="forecast-header">
+                    <div class="day next_day_name" ></div>
+                  </div>
+                  <div class="forecast-content">
+                    <div class="forecast-icon">
+                      <img class="next_condition_img" src="" alt width="48" >
+                    </div>
+                    <div class="degree2 next_max_temp"><sup></sup></div>
+                    <small class="next_min_temp"> <sup></sup></small>
+                    <div class="custom next_condition_text"></div>
+                  </div>
+                </div>
+
+            </div>
+            
+    </div>
+    
+</div>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <form action="#" class="subscribe-form">
+            <input type="text" placeholder="Enter Your emial to subscribe...">
+            <input type="submit" value="subscribe">
+          </form>
+        </div>
+        <div class="col-md-3 col-md-offset-1">
+          <div class="social-links">
+            <a href="#">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-google-plus-g"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-pinterest"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <p class="colophon">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+    </div>
+  </footer>
+     <!-- end home  -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
